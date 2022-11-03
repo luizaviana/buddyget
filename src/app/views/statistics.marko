@@ -1,0 +1,68 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatísticas | Buddyget</title>
+    
+    <link rel="stylesheet" href="/caminho/css/home.css">
+    <link rel="stylesheet" href="/caminho/css/partials/header.css">
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <header class="header-pages">
+        <h1 class="main-title">Buddyget</h1>
+        <div class="links">
+            <a href="/home">Visão Geral</a>
+
+            <div class="selected">
+                <a href="/statistics">Estatísticas</a>
+                <div class="block"></div>
+            </div>
+        </div>
+        <a href="/profile"><img id="profile" src="caminho/images/profile.jpg" alt="Perfil"></a>
+    </header>
+        </div>
+    </nav>
+    
+
+    <br>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Data:</th>
+                    <th>Descrição:</th>
+                    <th>Preço:</th>
+                    <th>Setor:</th>
+                    <th>ATUALIZAR</th>
+                    <th>REMOVER</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr for (despesa in data.despesa)>
+                    <td>${despesa.dataDespesa}</td>
+                    <td>${despesa.descricao}</td>
+                    <td>${despesa.valorDespesa}</td>
+                    <td>${despesa.nome}</td>
+                    <td><i class="glyphicon glyphicon-edit"></i>&nbsp&nbsp<a href="/atualizarDespesa/${despesa.idDespesa}">Editar</a></td>
+                    <td><i class="glyphicon glyphicon-remove-circle"></i>&nbsp&nbsp<a href=`/removeDespesa/${despesa.idDespesa}`>Remover</a></td>
+                </tr>
+                <tr></tr>
+            </tbody>
+            <br><br>
+            <thead class="thead-dark" id="segunda-thead">
+                <tr>
+                    <th>Valor Total:</th>
+                    <th>Restante do Orçamento:</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>${data.soma}</td>
+                <td>${data.orcamento}</td>
+              </tr>
+            </tbody>
+        </table>
+</body>
+</html>

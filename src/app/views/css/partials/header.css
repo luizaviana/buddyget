@@ -1,0 +1,82 @@
+:root{
+    --color-background-header: #32BF84;
+
+    --color-background-block: #F5F8FA;
+    --color-border: #D3E2E5;
+
+    --color-background-box: #ffffff;
+
+    --color-text: #ffffff;
+}
+
+header.header-pages{
+    background-color: var(--color-background-header);
+    width: 100vw;
+    height: 90px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px 0 20px;
+    margin-bottom: 100px;
+}
+
+h1.main-title{
+    color: var(--color-text);
+    font-family: "Nunito", sans-serif;
+
+    margin-left: 30px;
+    
+    align-items: center;
+}
+div.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: bottom;
+
+    position: relative;
+    top: 10px;
+}
+div.selected{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.selected div.block{
+    height: 5px;
+    width: 130px;
+    background-color: var(--color-background-box);
+
+    position: relative;
+    left: 90px;
+    top: 22px;
+}
+div.selected div#block-goals{
+    height: 5px;
+    width: 100px;
+    background-color: var(--color-background-box);
+
+    position: relative;
+    left: 80px;
+    top: 22px;
+}
+div.links a{
+    color: var(--color-text);
+    text-decoration: none;
+    font-family: "Comissioner", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+
+    margin: 0 100px;
+}
+img#profile{
+    margin-right: 30px;
+
+    height: 50px;
+    width: 50px;
+}

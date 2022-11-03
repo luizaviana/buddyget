@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Perfil | Buddyget</title>
+    <link rel="stylesheet" href="/caminho/css/create-spend.css">
+    <link rel="stylesheet" href="/caminho/css/partials/header.css">
+    <link rel="stylesheet" type="text/css" href="/caminho/css/forms.css">
+    <link href="https://fonts.google.com/specimen/Commissioner?selection.family=Commissioner|Nunito:wght@800" rel="stylesheet">
+</head>
+<body>
+    <header class="header-pages">
+        <h1 class="main-title">Buddyget</h1>
+        <div class="links">
+            <div class="selected">
+                <a href="/home">Visão Geral</a>
+                <div class="block"></div>
+            </div>
+            
+        <a href="/statistics">Estatísticas</a>
+        </div>
+        <a href="/profile"><img id="profile" src='caminho/images/profile.jpg' alt="Perfil"></a>  
+    </header>
+    <form method="post" class="form" action=`/atualizaUsuario/${data.usuario.idUsuario}`>
+                <fieldset>
+                    <legend>Atualize sua conta no Buddyget</legend>
+
+                    <div class="input-block">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" value=`${data.usuario.nome}`>
+                    </div>
+                    <div class="input-block">
+                        <label for="senha">Senha:</label>
+                        <input type="text" name="senha" id="senha" value=`${data.usuario.senha}`>
+                    </div>
+                    <div class="input-block">
+                        <label for="orcamento">Orçamento mensal:<span>(Em R$)</span></label>
+                        <input type="number" name="orcamento" id="orcamento" value=`${data.usuario.orcamento}`>
+                    </div>
+                </fieldset>
+                 <button class="confirm-button" type="submit">
+                  Atualizar Perfil!
+                </button>             
+               
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil | Buddyget</title>
+    <link rel="stylesheet" href="/caminho/css/create-spend.css">
+    <link rel="stylesheet" href="/caminho/css/home.css">
+    <link rel="stylesheet" href="/caminho/css/partials/header.css">
+</head>
+<body>
+    <header class="header-pages">
+        <h1 class="main-title">Buddyget</h1>
+        <div class="links">
+                <a href="/home">Visão Geral</a>
+            
+            <a href="/statistics">Estatísticas</a>
+        </div>
+        <a href="/profile"><img id="profile" src='caminho/images/profile.jpg' alt="Perfil"></a>
+    </header>
+    <div id="profile">
+        <br><h1>Seus Dados</h1>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID:</th>
+                        <th>Nome:</th>
+                        <th>Email:</th>
+                        <th>Orçamento:</th>
+                        <th>ALTERAR:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr for(usuario in data.usuario)>
+                        <td>${usuario.idUsuario}</td>
+                        <td>${usuario.nome}</td>
+                        <td>${usuario.email}</td>
+                        <td>${usuario.orcamento}</td>
+                        <td><i class="glyphicon glyphicon-edit"></i>&nbsp&nbsp<a href="/atualizaDadosUsuario">Editar</a></td>
+                    </tr>
+                    <tr></tr>
+                </tbody>
+                <br><br>
+            </table>
+        <br>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+</html>

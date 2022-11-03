@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar gasto | Buddyget</title>
+    <link rel="stylesheet" href="/caminho/css/create-spend.css">
+    <link rel="stylesheet" href="/caminho/css/partials/header.css">
+</head>
+<body>
+    <header class="header-pages">
+        <h1 class="main-title">Buddyget</h1>
+        <div class="links">
+            <div class="selected">
+                <a href="/home">Visão Geral</a>
+                <div class="block"></div>
+            </div>
+            
+            <a href="/statistics">Estatísticas</a>
+        </div>
+        <a href="/profile"><img id="profile" src='caminho/images/profile.jpg' alt="Perfil"></a>
+        
+    </header>
+    <form method="post" class="spending" action="/insertBDgasto">
+        <fieldset>
+            <legend>Cadastrar gasto</legend>
+
+
+            <div class="input-block">
+                <label for="descricao">Descrição:</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="5"></textarea>
+            </div>
+            <div class="input-block">
+                <label for="money">Valor: <strong>*</strong><span>*Em R$:</span></label>
+                <input type="number" name="money" id="money">
+            </div>
+            <div class="input-block">
+                <label for="sector">Setor: <strong>*</strong></label>
+                <select name="sector" id="sector">
+                    <option value="" selected>Selecione um setor</option>
+                    <option value="1">Doméstico</option>
+                    <option value="2">Alimentação</option>
+                    <option value="3">Comunicação</option>
+                    <option value="4">Transporte</option>
+                    <option value="5">Lazer</option>
+                    <option value="6">Outro</option>
+                </select>
+            </div>
+            <input type="date" id="dataDespesa" name="dataDespesa"/>
+            <p class="note"><strong>*</strong> Obrigatório</p>
+        </fieldset>
+        
+        <button class="confirm-button" type="submit">
+            Confirmar
+        </button>
+    </form>
+</body>
+</html>

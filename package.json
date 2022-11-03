@@ -1,0 +1,25 @@
+{
+  "name": "projpratica",
+  "version": "1.0.0",
+  "description": "projeto de Prática Profissional (Buddyget) - Giovana M. Z., 20728, Luiza V. S., 20145 E Letícia, 20142",
+  "main": "server.js",
+  "dependencies": {
+    "@marko/express": "^1.0.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.3",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-mysql-session": "^2.1.4",
+    "express-session": "^1.17.1",
+    "marko": "^4.23.10",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "GIOVANA M. Z.-20728, LUIZA V.S-20145, LETÍCIA-20142",
+  "license": "ISC"
+}

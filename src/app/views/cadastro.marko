@@ -1,0 +1,44 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Buddyget</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/caminho/css/forms.css">
+    <link href="https://fonts.google.com/specimen/Commissioner?selection.family=Commissioner|Nunito:wght@800" rel="stylesheet">
+</head>
+<body>
+    <div class="account">
+        <main>
+            <form method="post" class="form" onsubmit="" action="/insertBDUsuario">
+                <fieldset>
+                    <legend>Crie sua conta no Buddyget</legend>
+
+                    <div class="input-block">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div class="input-block">
+                        <label for="login">E-mail:</label>
+                        <input type="text" name="login" id="login">
+                    </div>
+                    <div class="input-block">
+                        <label for="senha">Senha:</label>
+                        <input type="text" name="senha" id="senha">
+                    </div>
+                    <div class="input-block">
+                        <label for="orcamento">Orçamento mensal:<span>(Em R$)</span></label>
+                        <input type="number" name="orcamento" id="orcamento">
+                    </div>
+                </fieldset>
+                
+                <input type="submit" value="Confirmar" class="confirm-button" />
+                <a href="/login">
+                Já possui uma conta? Faça login!
+                </a>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

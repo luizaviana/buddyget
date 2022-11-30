@@ -1,4 +1,4 @@
-![Buddyget](https://user-images.githubusercontent.com/69872395/204891823-e89e16d4-8582-4550-a822-1a191d4700ba.png)
+![Buddyget](https://user-images.githubusercontent.com/69872395/204892326-071933bc-6d82-4e1c-bd29-4b96c52048a7.png)
 # Projeto Final de Prática Profissional I
 - Finalizado em 12/2020, para entrega no Colégio Técnico de Campinas (COTUCA)
 - Uma plataforma de controle financeiro.
